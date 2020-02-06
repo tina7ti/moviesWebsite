@@ -1,0 +1,222 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+:root {
+	/* Heading height variable*/
+	--heading-height: 35%;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	//font-family: 'Just Another Hand', cursive;
+    overflow-X: hidden;
+    font-family: "Roboto", Arial, sans-serif;
+	background-color: #101010;
+}
+
+//ICI CODE HEADER
+header {
+  overflow: hidden;
+  content: "";
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  position: relative;
+	background: 
+		linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+		url(https://raw.githubusercontent.com/tina7ti/SiteMovies/master/src/assets/images/header.png) no-repeat center,
+		linear-gradient(#4e4376, #2b5876);
+	background-size: cover;
+  border-bottom: .2em solid #fff;
+}
+
+header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  //font-weight: 700;
+	letter-spacing: .01em;
+	text-shadow: .022em .022em .022em #111;
+	color: #fff;
+}
+
+header a.sub:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+header a.sub {
+ background-color: transparent;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #e7e7e7;
+    height: 25%;
+}
+
+header a.sub:hover {background-color: #e7e7e7;
+color: black;}
+	
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+//FIN
+	
+$big_nav_width: 12%;	
+$small_nav_width: 15%;
+
+$box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
+
+$magenta: #F44336;
+$nav_color: rgba(255, 82, 82, .2);
+$nav_hover_color: rgba(255, 82, 82, .8);
+
+#carou
+{
+    padding: 0%;
+ //   padding-top: 2%;
+    margin: 0%;
+
+}
+.container, .row,.col-md-12
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    left: 0%;
+    right: 0px;
+    width: 1320px;
+    //position: absolute;
+
+}
+a.carousel-control-prev, a.carousel-control-next
+{
+    width: $big_nav_width;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    background-color: $nav_color;
+    z-index: 99;
+    transition: .45s;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50% 0% 0% 50%;
+}
+a.carousel-control-prev
+{
+    border-radius: 0% 50% 50% 0%;
+}
+a.carousel-control-prev:hover, a.carousel-control-next:hover
+{
+    transition: .3s;
+    background-color: $nav_hover_color;
+}
+
+div.carousel-item
+{
+    background-color: #1c1c1c;
+	box-shadow: $box-shadow;
+}
+.carousel-caption
+{
+    margin-top: 0%;
+    position: unset;
+    display: block;
+}
+
+.carousel-caption p
+{
+    margin: 0% 2% 2% 0%;
+}
+.carousel-caption h5
+{
+    margin-bottom: 1%;
+    color: yellow;
+    font-size: unset;
+}
+.film
+{
+    width: 100%;
+    height: 300px;
+}
+#star
+{
+    width: 1%;
+    height: 1%;
+}
+.card1 h2
+{
+  color: $magenta;
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .container, .row,.col-md-12
+    {
+        width: 1200px;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .container, .row,.col-md-12
+    {
+        width: 1100px;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+    .container, .row,.col-md-12
+    {
+        width: 1000px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+    .container, .row,.col-md-12
+    {
+        width: 900px;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .container, .row,.col-md-12
+    {
+        width: 800px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .container, .row,.col-md-12
+    {
+        width: 700px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container, .row,.col-md-12
+    {
+        width: 100%;
+    }
+}
+
+

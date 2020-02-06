@@ -1,0 +1,22 @@
+.new
+{
+  color : red;
+  animation: blinker 1.5s linear infinite;
+  font-weight: bold;
+  text-align: center;
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+.card1
+{
+  border: 2px gray solid;
+  margin: 2% 2%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+.card1 h2
+{
+  text-align: center;
+  padding-top: 2%;	
+}

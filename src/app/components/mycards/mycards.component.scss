@@ -1,0 +1,40 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
+  }
+  .card-body
+  {
+    background-color:#202020;
+    color: white;
+  }
+  .btn-primary
+  {
+    background-color: rgb(216, 101, 93);
+    border-color: rgb(216, 101, 93); 
+  }
+  .h6title
+  {
+    color : brown;
+  }
+  .h6note
+  {
+    color: darkgoldenrod;
+  }
+  @media only screen and (min-width: 400px) {
+    .wrapper{
+    grid-template-columns: auto auto;
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    .wrapper {
+    grid-template-columns: auto auto auto;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .wrapper{
+    grid-template-columns: auto auto auto auto auto auto;
+    }
+  }

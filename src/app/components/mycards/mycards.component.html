@@ -1,0 +1,18 @@
+<div class="wrapper">
+	<div class="card" style="width: auto;" *ngFor="let m of movies">
+		<img class="card-img-top" src="{{m.backdrop_path}}" alt="{{m.title}}">
+        <div class="card-body">
+                <h5 class="card-title">{{m.title}}</h5>
+                <p class="card-text">
+                    <span><h6 class="h6title">{{m.original_language}}</h6> 
+                    <hr>
+                    <h6 class="h6note">{{m.vote_average}} / 10 ~ {{m.vote_count}} votes.</h6> 
+                </span>
+                    
+
+                </p>
+                <button  class="btn btn-primary">Watch now !</button>
+            </div>
+	</div>
+</div>
+
